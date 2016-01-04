@@ -70,6 +70,12 @@ if ( ! class_exists( 'DSubscribers' ) ) {
 				// bbdd
 				require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-bbdd.php';
 
+				require_once DSubscribers_PLUGIN_DIR . 'includes/class-dsubscribers-admin-api.php';
+				$this->admin = new DSubscribers_Admin_API();
+
+				require_once DSubscribers_PLUGIN_DIR . 'includes/class-dsubscribers-settings.php';
+				$settings = new DSubscribers_Settings( $this );
+
 			}
 
 			// functions

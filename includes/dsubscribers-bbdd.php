@@ -3,7 +3,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 /**
-* 
+* create dsubscribers table
 */
 function dsubscribers_database_install() {
 	
@@ -25,7 +25,7 @@ function dsubscribers_database_install() {
 }
 
 /**
-* 
+* update table check 
 */
 function dsubscribers_update_db_check() {
 
