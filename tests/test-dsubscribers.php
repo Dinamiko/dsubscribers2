@@ -33,6 +33,9 @@ class DSubscribersTest extends WP_UnitTestCase {
 
 		// includes
 		$this->assertFileExists( DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-load-js-css.php' );
+		$this->assertFileExists( DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-functions.php' );
+		$this->assertFileExists( DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-bbdd.php' );
+		$this->assertFileExists( DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-install.php' );
 
 		// assets
 		$this->assertFileExists( DSubscribers_PLUGIN_DIR . 'assets/css/admin.css' );

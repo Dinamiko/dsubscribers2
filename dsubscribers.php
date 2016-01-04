@@ -63,7 +63,21 @@ if ( ! class_exists( 'DSubscribers' ) ) {
 		private function includes() {
 
 			// enqueue css / js
-			require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-load-js-css.php';	
+			require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-load-js-css.php';
+
+			if ( is_admin() ) {
+
+				// bbdd
+				require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-bbdd.php';
+
+			}
+
+			// functions
+			require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-functions.php';
+
+			// install
+			require_once DSubscribers_PLUGIN_DIR . 'includes/dsubscribers-install.php';
+			
 
 			/*
 			// upgrade dashboard screen
